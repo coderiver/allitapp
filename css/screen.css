@@ -26,7 +26,6 @@ html { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: 
 *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 @font-face { font-family: circe; src: url("fonts/CRC35.eot"); src: url("fonts/CRC35.eot?#iefix") format("embedded-opentype"), url("fonts/CRC35.woff2") format("woff2"), url("fonts/CRC35.woff") format("woff"), url("fonts/CRC35.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-
 body { font-family: circe, sans-serif; font-size: 14px; line-height: 1.4; color: #b3b3b3; position: relative; text-align: center; }
 
 a { color: #b3a1e9; text-decoration: none; }
@@ -39,10 +38,11 @@ a:hover { text-decoration: underline; }
 .footer { position: absolute; bottom: 10px; width: 100%; left: 0; text-align: center; font-size: 10px; }
 .footer span { position: relative; top: -1px; }
 
-.logo { height: 128px; width: 200px; margin: 0 auto; position: relative; margin-bottom: 95px; margin-top: 25vh; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+.logo { height: 128px; width: 200px; margin: 0 auto; position: relative; margin-bottom: 95px; margin-top: 25vh; -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
 @media only screen and (max-width: 700px) { .logo { margin-bottom: 66px; } }
 .logo .logo__text { width: 169px; height: 60px; background: url(../img/logo.svg) no-repeat 0 0; position: absolute; top: 50%; left: 50%; margin-top: -30px; margin-left: -85px; z-index: 100; }
-.logo .logo__sq1, .logo .logo__sq2, .logo .logo__sq3, .logo .logo__sq4 { position: absolute; left: -30px; top: 50%; width: 87px; height: 87px; z-index: 10; margin-left: 10px; -webkit-transform: translate(0, -50%); -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -o-transform: translate(0, -50%); transform: translate(0, -50%); opacity: 0; -webkit-transition: opacity 0.2s linear; -moz-transition: opacity 0.2s linear; -o-transition: opacity 0.2s linear; transition: opacity 0.2s linear; }
+.logo .logo__text:before { position: absolute; top: 0; left: 0; background: url('../img/icons-s272067d7a6.png') 0 -30px no-repeat; width: 169px; height: 60px; content: ""; }
+.logo .logo__sq1, .logo .logo__sq2, .logo .logo__sq3, .logo .logo__sq4 { position: absolute; left: -30px; top: 50%; width: 87px; height: 87px; z-index: 10; margin-left: 10px; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); opacity: 0; -moz-transition: opacity 0.2s linear; -o-transition: opacity 0.2s linear; -webkit-transition: opacity 0.2s linear; transition: opacity 0.2s linear; }
 .a .logo .logo__sq1, .a .logo .logo__sq2, .a .logo .logo__sq3, .a .logo .logo__sq4 { opacity: 1; }
 .logo .logo__sq1 svg, .logo .logo__sq2 svg, .logo .logo__sq3 svg, .logo .logo__sq4 svg { width: 100%; height: 100%; position: absolute; left: 0; top: 0; }
 .logo .logo__sq2 { width: 82px; height: 82px; margin-left: 42px; z-index: 9; }
