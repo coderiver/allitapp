@@ -46,12 +46,95 @@
 // 	+png(blabla)
 // p
 // 	+jpg(bla)
-
++font(circe, CRC35)
+=cir
+	font-family: circe,sans-serif
 
 body
-	font-family: Arial, sans-serif
-	font-size: 12px
+	+cir
+	font-size: 14px
 	line-height: 1.4
+	color: #b3b3b3
+	position: relative
+	text-align: center
+a
+	color: #b3a1e9 
+	text-decoration: none
+	&:hover
+		text-decoration: underline
+.top
+	height: 1px 
+.content
+	padding: 0 15px 
+.footer
+	position: absolute
+	bottom: 10px
+	width: 100%
+	left: 0
+	text-align: center
+	font-size: 10px
+	span
+		position: relative
+		top: -1px
+.logo
+	height: 128px
+	width: 200px
+	margin: 0 auto
+	position: relative
+	margin-bottom: 95px 
+	margin-top: 25vh 
+	+gpu
+	+r(700)
+		margin-bottom: 66px 
+	.logo__text
+		width: 149px
+		height: 40px
+		background:  url(../img/logo.svg) no-repeat 0 0
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-top: -20px
+		margin-left: -75px
+		z-index: 100
+	.logo__sq1
+		position: absolute
+		left: -30px
+		top: 50%
+		width: 87px
+		height: 87px
+		z-index: 10
+		+transform(translate(0,-50%))
+		opacity: 0
+		+transition(opacity .2s linear)
+		.a &
+			opacity: 1
+		svg
+			width: 100%
+			height: 100%
+			position: absolute
+			left: 0
+			top: 0
+	.logo__sq2
+		@extend .logo__sq1
+		width: 82px
+		height: 82px
+		margin-left: 33px
+		z-index: 9
+	.logo__sq3
+		@extend .logo__sq1
+		width: 127px
+		height: 127px
+		margin-left: 43px
+		z-index: 8
+	.logo__sq4
+		@extend .logo__sq1
+		width: 88px
+		height: 88px
+		margin-left: 110px
+		z-index: 7
+
+
+
 
 
 // common blocks
