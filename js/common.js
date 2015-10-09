@@ -8,9 +8,9 @@ head.ready(function() {
 	sq4 = $('#logo__sq4');
 	$('body').mousemove(function (e) {
 	    var mouseX = e.pageX;
-	    sq1.css('left',10*mouseX/w);
-	    sq2.css('left',20*mouseX/w);
-	    sq3.css('left',25*mouseX/w);
-	    sq4.css('left',30*mouseX/w);
+	    sq1.css('transform', 'translate('+ 10*mouseX/w +'px,-50%)');
+	    sq2.css('transform', 'translate('+ 20*mouseX/w +'px,-50%)');
+	    sq3.css('transform', 'translate('+ 30*mouseX/w +'px,-50%)');
+	    sq4.css('transform', 'translate('+ 40*mouseX/w +'px,-50%)');
 	});
 });
